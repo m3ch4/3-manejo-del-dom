@@ -10,5 +10,9 @@ userForm.addEventListener("submit", function(e){
     const userData = Object.fromEntries(data.entries());
 
     console.log("Todos los datos del usuario son: ", userData);
-    
+    console.log("El nombre del usuario es: ", userData.nombre);
+    console.log("El correo del usuario es: ", userData.email);
+
+    const tel = userData["numero"];
+    console.log("Esta es una variable", tel);    
     });
