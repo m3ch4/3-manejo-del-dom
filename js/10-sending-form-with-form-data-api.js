@@ -7,5 +7,8 @@ userForm.addEventListener("submit", function(e){
     e.preventDefault();
 
     const data = new FormData(userForm);
-    const userData = Object.fromEntries(data.entries);
-    })
+    const userData = Object.fromEntries(data.entries());
+
+    console.log("Todos los datos del usuario son: ", userData);
+    
+    });
